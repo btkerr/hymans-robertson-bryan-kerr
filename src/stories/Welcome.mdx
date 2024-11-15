@@ -1,0 +1,115 @@
+import { Meta } from "@storybook/blocks";
+
+import Placeholder1 from "./assets/hymans-robertson-1.png";
+import Placeholder2 from "./assets/hymans-robertson-2.png";
+import Placeholder3 from "./assets/hymans-robertson-3.png";
+import Placeholder4 from "./assets/hymans-robertson-4.png";
+
+<Meta title="Bryan Kerr" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    <h1><span className="wee-wave">👋</span>😊 Hello, my name is Bryan Kerr</h1>
+    <p class="sb-section-intro">This Storybook showcases the results of my Front-End Technical Test for Hymans Robertson.</p>
+  </div>
+</div>
+<div className="sb-container">
+
+  <div className="sb-section">
+    <div className="sb-features-grid">
+      <div className="sb-grid-item">
+        <img src={Placeholder4} alt="" role="presentation" />
+        <h4 className="sb-section-item-heading">Source Code</h4>
+        <p className="sb-section-item-paragraph">The source code for this technical test is available on <a href="#">GitHub</a>.</p>
+      </div>
+      <div className="sb-grid-item">
+        <img src={Placeholder2} alt="" role="presentation" />
+        <h4 className="sb-section-item-heading">Chromatic</h4>
+        <p className="sb-section-item-paragraph">This technical test utilises Chromatic to visualise updates and changes.</p>
+      </div>
+      <div className="sb-grid-item">
+        <img src={Placeholder3} alt="" role="presentation" />
+        <h4 className="sb-section-item-heading">Testing</h4>
+        <p className="sb-section-item-paragraph">E2E tests are conducted with Cypress, while unit tests use Storybook UI.</p>
+      </div>
+      <div className="sb-grid-item">
+        <img src={Placeholder1} alt="" role="presentation" />
+        <h4 className="sb-section-item-heading">Dashboard UI</h4>
+        <p className="sb-section-item-paragraph">A <a href="#">full-page dashboard view</a> of this technical test is also available.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .sb-section-intro {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .sb-section-item-heading {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .sb-section-item-paragraph {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .sb-section-item-paragraph a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .sb-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+
+    .sb-features-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .wee-wave {
+      display: inline-block;
+      font-size: 1em;
+      animation: wave-animation 1.5s ease-in-out infinite;
+      transform-origin: 70% 70%;
+    }
+
+    @keyframes wave-animation {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-15deg); }
+      50% { transform: rotate(10deg); }
+      75% { transform: rotate(-10deg); }
+    }
+  `}
+</style>

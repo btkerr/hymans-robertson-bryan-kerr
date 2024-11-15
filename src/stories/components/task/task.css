@@ -1,0 +1,83 @@
+.c-task {
+  /* The following custom properties are from the tech assessment brief and applied below */
+  --heading-font-size: 1.25rem; /* 20px */
+  --heading-font-weight: 500;
+  --heading-color: #212121;
+
+  --body-font-size: 0.875rem; /* 14px */
+  --body-font-weight: 400;
+  --body-color: #696765;
+
+  --link-font-size: 0.875rem; /* 14px */
+  --link-font-weight: 700;
+  --link-color: #455560;
+
+  --shadow: 1px 1px 1rem rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 1.75rem;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 1.75rem 2rem;
+  }
+}
+
+.c-task__img {
+  align-self: flex-start;
+  width: 4rem;
+
+  @media (min-width: 768px) {
+    width: 6rem;
+  }
+
+  @media (min-width: 1024px) {
+    width: 8rem;
+  }
+}
+
+.c-task__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.c-task__header {
+  margin-bottom: 0.25rem;
+}
+
+.c-task__header-title {
+  font-size: var(--heading-font-size);
+  font-weight: var(--heading-font-weight);
+  color: var(--heading-color);
+}
+
+.c-task__body {
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  color: var(--body-color);
+}
+
+.c-task__footer {
+  margin-top: auto;
+}
+
+.c-task__footer a {
+  font-size: var(--link-font-size);
+  font-weight: var(--link-font-weight);
+  color: var(--link-color);
+  text-decoration: none;
+  outline-offset: 0.25rem;
+}

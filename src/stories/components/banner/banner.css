@@ -1,0 +1,25 @@
+.c-banner {
+  --gradient-start: #00ace1;
+  --gradient-end: #70bc1f;
+  --offset: -4.5rem;
+
+  background: var(--gradient-start);
+  background-image: linear-gradient(
+    274.91deg,
+    var(--gradient-end) -26.96%,
+    var(--gradient-start) 93.71%
+  );
+  padding: 4rem 0;
+
+  @media (min-width: 768px) {
+    padding: 5.5rem 0;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 7rem 0;
+  }
+}
+
+.c-banner.has-offset {
+  margin-bottom: var(--offset);
+}
