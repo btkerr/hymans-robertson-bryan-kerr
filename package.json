@@ -4,7 +4,8 @@
   "scripts": {
     "storybook": "ng run hymans-robertson-bryan-kerr:storybook",
     "build-storybook": "ng run hymans-robertson-bryan-kerr:build-storybook",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "chromatic": "npx chromatic --project-token=chpt_0ddc8efbef84000"
   },
   "private": true,
   "dependencies": {
